@@ -45,7 +45,7 @@ isProject: false
 
 **Paired document:** [Frontend plan — agent UI](o365-ticketing-migration-frontend.plan.md) (Next.js App Router, shadcn/ui, routes, auth UX, loading states). The REST API in §8 and milestones §11 are the **contract** for that UI. If you change endpoints, payloads, or milestone scope here, update the frontend plan in the same change.
 
-> **Note:** This file was split from the former combined plan. Historical edits may still exist in `o365-ticketing-migration_338a5375.plan.md` only as a hub pointer — treat **this file** as the source of truth for backend.
+> **Note:** This file was split from the former combined plan. The hub narrative lives in [`o365-ticketing-migration_338a5375.plan.md`](o365-ticketing-migration_338a5375.plan.md); treat **this file** as the source of truth for backend.
 
 # Ticketing migration plan: shared O365 mailbox to self-hosted system
 
@@ -953,7 +953,7 @@ Each is independently deployable and verifiable.
 
 This milestone list is to be executed **strictly in order** by the implementing agent. The hub plan documents the programme-wide strategy; the backend-specific rules below are non-negotiable for this file.
 
-**A. Pin this plan at session start.** Every backend session must begin by pinning `@o365-ticketing-migration-backend.plan.md` to chat context, plus the hub when cross-cutting decisions are in play. The plan is the source of truth; if implementation reveals a contradiction, the plan is updated **in the same change** as the code.
+**A. Pin this plan at session start.** Every backend session must begin by pinning `@docs/plans/o365-ticketing-migration-backend.plan.md` to chat context, plus `@docs/plans/o365-ticketing-migration_338a5375.plan.md` when cross-cutting decisions are in play. The plan is the source of truth; if implementation reveals a contradiction, the plan is updated **in the same change** as the code.
 
 **B. Milestone-by-milestone, no skipping.** Do not start M(n+1) until M(n)'s verification block (§11.V) passes locally. Cross-milestone refactors are allowed, but they must keep every earlier milestone's verification green; re-run the affected blocks at the end of the session.
 
