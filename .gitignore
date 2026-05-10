@@ -1,0 +1,84 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Local AI assistant guidance and state
+AGENTS.md
+MAP.md
+CLAUDE.md
+GEMINI.md
+.codex/
+.kimi/
+.claude/
+.cursor/
+.continue/
+.windsurf/
+.windsurfrules
+.github/copilot-instructions.md
+.github/instructions/
+.aider*
+.railway/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.cer
+*.csr
+*.p12
+*.pfx
+*.p8
+id_rsa*
+id_ed25519*
+
+# Dependencies and package-manager state
+node_modules/
+.pnpm-store/
+.pnp
+.pnp.*
+
+# Next.js / build output
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+.turbo/
+.vercel/
+
+# Logs and local diagnostics
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*-debug.log
+
+# Test and coverage artifacts
+coverage/
+.nyc_output/
+.vitest/
+playwright-report/
+test-results/
+
+# Local runtime data
+backups/
+uploads/
+tmp/
+temp/
+.cache/
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+*.dump
+*.backup
+*.sql.gz

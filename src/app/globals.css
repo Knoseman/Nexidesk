@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --background: #ffffff;
+    --foreground: #0f172a;
+    /* Brand tokens — overridden at page load by layout.tsx <style> injection */
+    --brand-primary: #2563eb;
+    --brand-primary-fg: #ffffff;
+    --brand-sidebar: #0f172a;
+    --brand-sidebar-fg: #f8fafc;
+    --brand-accent: #60a5fa;
+    color-scheme: light;
+}
+
+.dark {
+    --background: #0f172a;
+    --foreground: #f1f5f9;
+    color-scheme: dark;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-brand-primary: var(--brand-primary);
+    --color-brand-primary-fg: var(--brand-primary-fg);
+    --color-brand-sidebar: var(--brand-sidebar);
+    --color-brand-sidebar-fg: var(--brand-sidebar-fg);
+    --color-brand-accent: var(--brand-accent);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.ProseMirror {
+    outline: none;
+}
+.ProseMirror p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: #94a3b8;
+    pointer-events: none;
+    height: 0;
+}
+
+/* Force SideNav visibility */
+.bg-brand-sidebar {
+    background-color: #0f172a !important;
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-geist-sans), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Hide Next.js dev tools badge — only visible in development, not needed in this workspace */
+[data-next-badge-root] {
+    display: none !important;
+}
+
+.email-body a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+.email-body a:hover {
+  color: #1d4ed8;
+}
+.dark .email-body a {
+  color: #60a5fa;
+}
+.dark .email-body a:hover {
+  color: #93c5fd;
+}
+
+.nexidesk-quote-collapsed .nexidesk-quote,
+.nexidesk-quote-collapsed > blockquote {
+    display: none;
+}
+
+.nexidesk-quote blockquote {
+    border-left: 3px solid #cbd5e1;
+    margin-left: 0;
+    padding-left: 12px;
+    color: #64748b;
+}
+
+.dark .nexidesk-quote blockquote {
+    border-left-color: #475569;
+    color: #94a3b8;
+}

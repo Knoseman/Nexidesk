@@ -1,0 +1,2 @@
+-- No-op migration (intermediate snapshot state, never applied independently)
+-- messages_ticket_id FK was temporarily removed here and re-added in 0012
