@@ -61,7 +61,7 @@ This section defines **how** the work in the backend and frontend plans is to be
 ### 1. Source of truth — pin the plan files every session
 
 - The three plan files are the source of truth. Code that disagrees with the plan is wrong; the plan that disagrees with reality must be updated **in the same change** as the code.
-- At the start of every session, **pin the relevant plan file(s) to chat context** (`@o365-ticketing-migration_338a5375.plan.md` for cross-cutting decisions, `@o365-ticketing-migration-backend.plan.md` for API/data/worker work, `@o365-ticketing-migration-frontend.plan.md` for UI work). When a change spans both halves, pin **both** split plans plus the hub.
+- At the start of every session, **pin the relevant plan file(s) to chat context** (`@docs/plans/o365-ticketing-migration_338a5375.plan.md` for cross-cutting decisions, `@docs/plans/o365-ticketing-migration-backend.plan.md` for API/data/worker work, `@docs/plans/o365-ticketing-migration-frontend.plan.md` for UI work). When a change spans both halves, pin **both** split plans plus the hub.
 - A session that touches API shapes, payloads, milestones, or UI scope must end with both split plans updated and the hub re-read for consistency.
 
 ### 2. Milestone-driven workflow (backend leads, frontend follows)

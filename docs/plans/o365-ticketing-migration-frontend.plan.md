@@ -40,7 +40,7 @@ This section is binding for any session that touches the frontend. It complement
 
 ### A. Pin this plan + the backend plan at session start
 
-Every frontend session must begin by pinning **both** `@o365-ticketing-migration-frontend.plan.md` and `@o365-ticketing-migration-backend.plan.md` to chat context (and the hub when cross-cutting decisions are in play). Backend §8 is the contract; you must read it before coding the route that consumes it.
+Every frontend session must begin by pinning **both** `@docs/plans/o365-ticketing-migration-frontend.plan.md` and `@docs/plans/o365-ticketing-migration-backend.plan.md` to chat context (`@docs/plans/o365-ticketing-migration_338a5375.plan.md` when cross-cutting decisions are in play). Backend §8 is the contract; you must read it before coding the route that consumes it.
 
 ### B. Strict contract enforcement against backend §8
 
